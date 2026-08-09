@@ -1,0 +1,150 @@
+/* ==========================================================
+   PROJECTS
+========================================================== */
+
+.projects {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 6rem 2rem;
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.projects-title {
+  text-align: center;
+
+  font-size: 2.8rem;
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  margin: 0 0 1rem;
+
+  color: var(--color-text);
+
+  position: relative;
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.projects-text {
+  max-width: 700px;
+
+  margin: 0 auto 4rem;
+
+  text-align: center;
+
+  color: var(--color-text-secondary);
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+}
+
+/* ==========================================================
+   PROJECT GRID
+========================================================== */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  width: 100%;
+
+  align-items: stretch;
+}
+
+/* ==========================================================
+   PROJECT CARDS
+========================================================== */
+
+.projects-grid > * {
+  width: 100%;
+  min-width: 0;
+
+  height: 100%;
+}
+
+/* ==========================================================
+   PROJECT CARD CONSISTENCY
+========================================================== */
+
+.projects-grid .project-card {
+  height: 100%;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 5rem 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1.25rem;
+  }
+
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .projects-text {
+    margin-bottom: 3rem;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+  .projects-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 3.5rem 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-text {
+    font-size: 0.95rem;
+
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-grid {
+    gap: 1.25rem;
+  }
+}

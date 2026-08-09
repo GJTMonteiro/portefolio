@@ -1,0 +1,115 @@
+/* ==========================
+   CONTACT
+========================== */
+
+.contact {
+  padding: 6rem 2rem;
+  scroll-margin-top: 90px;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* ==========================
+   DESCRIPTION
+========================== */
+
+.contact-text {
+  color: #b3b3b3;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+/* ==========================
+   CONTACT LINKS
+========================== */
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.4rem;
+
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+
+  color: #fff;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-4px);
+}
+
+/* ==========================
+   ICONS
+========================== */
+
+.contact-links svg {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 5rem 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-text {
+    margin-bottom: 2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-links a {
+    width: 220px;
+    justify-content: center;
+  }
+}
