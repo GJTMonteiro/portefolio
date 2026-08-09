@@ -1,32 +1,82 @@
-# React + TypeScript + Vite
+# 👋 Hi, I'm Guilherme Monteiro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+💻 Frontend Developer  
+🚀 Focused on React and modern web development
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This website was created to showcase my skills, experience, projects and interest in modern web development.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies
 
-## Expanding the Oxlint configuration
+- React
+- CSS
+- JavaScript
+- Git
+- GitHub
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## ✨ Features
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- Responsive design
+- Modern and clean interface
+- Smooth navigation
+- Projects showcase
+- About section
+- Skills section
+- Contact section
+- GitHub and LinkedIn integration
+- Mobile-friendly layout
+
+---
+
+## 🌐 Portfolio Sections
+
+### About
+
+A short introduction about me and my approach to web development.
+
+### Skills
+
+A showcase of the technologies and tools I use in my development work.
+
+### Projects
+
+A selection of projects created to demonstrate my skills, creativity and experience with modern web technologies.
+
+### Contact
+
+Links to my professional profiles for networking and collaboration.
+
+---
+
+## 🌍 Languages
+
+- 🇵🇹 Portuguese — Native
+- 🇬🇧 English
+
+---
+
+## 🔗 Socials
+
+- [GitHub](https://github.com/GJTMonteiro)
+- [LinkedIn](https://www.linkedin.com/in/gjtmonteiro/)
+
+---
+
+## 🚀 Built With
+
+This portfolio was built using:
+
+- React
+- TypeScript
+- Vite
+- CSS
+- React Icons
+
+---
+
+© 2026 Guilherme Monteiro. All rights reserved.
