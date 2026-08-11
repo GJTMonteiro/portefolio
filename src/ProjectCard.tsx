@@ -1,4 +1,4 @@
-import { FaGithub} from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import type { ReactNode } from 'react';
 
 interface ProjectCardProps {
@@ -6,6 +6,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   github: string;
+  demo?: string;
   technologies: ReactNode[];
 }
 
@@ -14,6 +15,7 @@ const ProjectCard = ({
   description,
   image,
   github,
+  demo,
   technologies,
 }: ProjectCardProps) => {
   return (
@@ -34,6 +36,7 @@ const ProjectCard = ({
         </div>
 
         <div className="project-buttons">
+          {/* GitHub */}
           <a
             href={github}
             target="_blank"
@@ -43,6 +46,17 @@ const ProjectCard = ({
             <span>GitHub</span>
           </a>
 
+          {/* Live Demo */}
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live Demo">
+              <FaExternalLinkAlt />
+              <span>Live Demo</span>
+            </a>
+          )}
         </div>
       </div>
     </div>

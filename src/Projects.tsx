@@ -9,7 +9,8 @@ import {
 } from 'react-icons/si';
 
 // Project images
-const ColorPaletteGenerator = 'https://placehold.co/600x400?text=Color+Palette+Generator';
+const ColorPaletteGenerator =
+  'https://placehold.co/600x400?text=Color+Palette+Generator';
 
 const DevTrack = 'https://placehold.co/600x400?text=DevTrack';
 
@@ -33,6 +34,7 @@ const Projects = () => {
           description="A web application that generates and explores color palettes for design and styling."
           image={ColorPaletteGenerator}
           github="https://github.com/GJTMonteiro/color-palette-generator"
+          demo="https://color-palette-generator-zeta-sepia.vercel.app"
           technologies={[
             <SiReact color="#61DAFB" />,
             <SiCss color="#1572B6" />,
