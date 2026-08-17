@@ -12,10 +12,20 @@ This website was created to showcase my skills, experience, projects and interes
 ## 🛠️ Technologies
 
 - React
-- CSS
+- TypeScript
 - JavaScript
+- HTML5
+- CSS3
+- Vite
+- Node.js
+- Express.js
+- PostgreSQL
+- SQL
+- REST APIs
+- React Router
 - Git
 - GitHub
+- Vercel 
 
 ---
 
