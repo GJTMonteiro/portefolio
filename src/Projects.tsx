@@ -6,6 +6,7 @@ import {
   SiCss,
   SiExpress,
   SiPostgresql,
+  SiVite,
 } from 'react-icons/si';
 
 // Project images
@@ -13,6 +14,8 @@ const ColorPaletteGenerator =
   'https://placehold.co/600x400?text=Color+Palette+Generator';
 
 const DevTrack = 'https://placehold.co/600x400?text=DevTrack';
+
+const GTCoin = 'https://placehold.co/600x400?text=GTCoin';
 
 const Projects = () => {
   return (
@@ -56,6 +59,24 @@ const Projects = () => {
             <SiCss color="#1572B6" />,
             <SiExpress color="#ffffff" />,
             <SiPostgresql color="#4169E1" />,
+          ]}
+        />
+
+        {/* =====================================================
+            GTCOIN
+        ===================================================== */}
+
+        <ProjectCard
+          title="GTCoin"
+          description="A modern cryptocurrency and Web3 landing page featuring tokenomics, roadmap, NFTs, team members and an FAQ section."
+          image={GTCoin}
+          github="https://github.com/GJTMonteiro/crypto-website"
+          demo="https://crypto-website-omega-beige.vercel.app"
+          technologies={[
+            <SiReact color="#61DAFB" />,
+            <SiTypescript color="#3178C6" />,
+            <SiVite color="#646CFF" />,
+            <SiCss color="#1572B6" />,
           ]}
         />
       </div>
