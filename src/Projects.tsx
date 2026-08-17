@@ -10,12 +10,10 @@ import {
 } from 'react-icons/si';
 
 // Project images
-const ColorPaletteGenerator =
-  'https://placehold.co/600x400?text=Color+Palette+Generator';
+import colorPaletteGenerator from './assets/projects/color-palette-generator.png';
+import gtcoin from './assets/projects/gtcoin.png';
 
 const DevTrack = 'https://placehold.co/600x400?text=DevTrack';
-
-const GTCoin = 'https://placehold.co/600x400?text=GTCoin';
 
 const Projects = () => {
   return (
@@ -35,7 +33,7 @@ const Projects = () => {
         <ProjectCard
           title="Color Palette Generator"
           description="A web application that generates and explores color palettes for design and styling."
-          image={ColorPaletteGenerator}
+          image={colorPaletteGenerator}
           github="https://github.com/GJTMonteiro/color-palette-generator"
           demo="https://color-palette-generator-zeta-sepia.vercel.app"
           technologies={[
@@ -69,7 +67,7 @@ const Projects = () => {
         <ProjectCard
           title="GTCoin"
           description="A modern cryptocurrency and Web3 landing page featuring tokenomics, roadmap, NFTs, team members and an FAQ section."
-          image={GTCoin}
+          image={gtcoin}
           github="https://github.com/GJTMonteiro/crypto-website"
           demo="https://crypto-website-omega-beige.vercel.app"
           technologies={[
