@@ -51,6 +51,7 @@ const Projects = () => {
           description="A full-stack developer productivity platform for managing projects, tasks, productivity and development workflows."
           image={DevTrack}
           github="https://github.com/GJTMonteiro/DevTrack"
+          demo="https://dev-track-ecru.vercel.app/register"
           technologies={[
             <SiReact color="#61DAFB" />,
             <SiTypescript color="#3178C6" />,
