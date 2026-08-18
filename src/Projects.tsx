@@ -12,8 +12,8 @@ import {
 // Project images
 import colorPaletteGenerator from './assets/projects/color-palette-generator.png';
 import gtcoin from './assets/projects/gtcoin.png';
+import DevTrack from './assets/projects/DevTrack.png';
 
-const DevTrack = 'https://placehold.co/600x400?text=DevTrack';
 
 const Projects = () => {
   return (
