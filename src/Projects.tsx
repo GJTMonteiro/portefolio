@@ -13,7 +13,7 @@ import {
 import colorPaletteGenerator from './assets/projects/color-palette-generator.png';
 import gtcoin from './assets/projects/gtcoin.png';
 import DevTrack from './assets/projects/DevTrack.png';
-
+import DevDocs from './assets/projects/DevDocs.png';
 
 const Projects = () => {
   return (
@@ -61,6 +61,25 @@ const Projects = () => {
           ]}
         />
 
+        {/* =====================================================
+            DEVDOCS
+===================================================== */}
+
+        <ProjectCard
+          title="DevDocs"
+          description="AI-first platform for managing, searching, and interacting with technical documentation, with intelligent AI assistance, user management, notifications, and RAG/MCP support."
+          image={DevDocs}
+          github="https://github.com/GJTMonteiro/DevDocs"
+          demo="https://SEU-LINK-DO-DEVDOCS.com"
+          technologies={[
+            <SiReact color="#61DAFB" />,
+            <SiTypescript color="#3178C6" />,
+            <SiVite color="#646CFF" />,
+            <SiCss color="#1572B6" />,
+            <SiExpress color="#ffffff" />,
+            <SiPostgresql color="#4169E1" />,
+          ]}
+        />
         {/* =====================================================
             GTCOIN
         ===================================================== */}
