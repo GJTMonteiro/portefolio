@@ -70,7 +70,7 @@ const Projects = () => {
           description="AI-first platform for managing, searching, and interacting with technical documentation, with intelligent AI assistance, user management, notifications, and RAG/MCP support."
           image={DevDocs}
           github="https://github.com/GJTMonteiro/DevDocs"
-          demo="https://SEU-LINK-DO-DEVDOCS.com"
+          demo="https://dev-docs-pi-fawn.vercel.app/dashboard"
           technologies={[
             <SiReact color="#61DAFB" />,
             <SiTypescript color="#3178C6" />,
