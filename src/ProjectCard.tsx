@@ -1,5 +1,6 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import type { ReactNode } from 'react';
+import { useLanguage } from './LanguageContext';
 
 interface ProjectCardProps {
   title: string;
@@ -18,6 +19,21 @@ const ProjectCard = ({
   demo,
   technologies,
 }: ProjectCardProps) => {
+  const { language } = useLanguage();
+
+  const translations = {
+    pt: {
+      github: 'Repositório GitHub',
+      demo: 'Demonstração online',
+    },
+    en: {
+      github: 'GitHub Repository',
+      demo: 'Live Demo',
+    },
+  };
+
+  const t = translations[language];
+
   return (
     <div className="project-card">
       <img src={image} alt={title} className="project-image" />
@@ -36,25 +52,23 @@ const ProjectCard = ({
         </div>
 
         <div className="project-buttons">
-          {/* GitHub */}
           <a
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub Repository">
+            aria-label={t.github}>
             <FaGithub />
             <span>GitHub</span>
           </a>
 
-          {/* Live Demo */}
           {demo && (
             <a
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Live Demo">
+              aria-label={t.demo}>
               <FaExternalLinkAlt />
-              <span>Live Demo</span>
+              <span>{t.demo}</span>
             </a>
           )}
         </div>

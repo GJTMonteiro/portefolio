@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import { useLanguage } from './LanguageContext';
 
 import {
   SiReact,
@@ -16,23 +17,78 @@ import DevTrack from './assets/projects/DevTrack.png';
 import DevDocs from './assets/projects/DevDocs.png';
 
 const Projects = () => {
+  const { language } = useLanguage();
+
+  const translations = {
+    pt: {
+      title: 'Projetos',
+      description:
+        'Uma seleção de projetos que desenvolvi para demonstrar o meu interesse pelo desenvolvimento web moderno, com código organizado e experiências intuitivas para os utilizadores.',
+      projects: [
+        {
+          title: 'Gerador de Paletas de Cores',
+          description:
+            'Uma aplicação web que permite gerar e explorar paletas de cores para design e estilização.',
+        },
+        {
+          title: 'DevTrack',
+          description:
+            'Uma plataforma full-stack de produtividade para programadores, destinada à gestão de projetos, tarefas, produtividade e fluxos de desenvolvimento.',
+        },
+        {
+          title: 'DevDocs',
+          description:
+            'Uma plataforma orientada para IA que permite gerir, pesquisar e consultar documentação técnica, com assistência inteligente, gestão de utilizadores, notificações e suporte para RAG/MCP.',
+        },
+        {
+          title: 'GTCoin',
+          description:
+            'Uma landing page moderna de criptomoedas e Web3, com tokenomics, roteiro do projeto, NFTs, equipa e secção de perguntas frequentes.',
+        },
+      ],
+    },
+    en: {
+      title: 'Projects',
+      description:
+        'A selection of projects that I coded to show my interest in modern web development with clean code and intuitive user experiences.',
+      projects: [
+        {
+          title: 'Color Palette Generator',
+          description:
+            'A web application that generates and explores color palettes for design and styling.',
+        },
+        {
+          title: 'DevTrack',
+          description:
+            'A full-stack developer productivity platform for managing projects, tasks, productivity and development workflows.',
+        },
+        {
+          title: 'DevDocs',
+          description:
+            'AI-first platform for managing, searching, and interacting with technical documentation, with intelligent AI assistance, user management, notifications, and RAG/MCP support.',
+        },
+        {
+          title: 'GTCoin',
+          description:
+            'A modern cryptocurrency and Web3 landing page featuring tokenomics, roadmap, NFTs, team members and an FAQ section.',
+        },
+      ],
+    },
+  };
+
+  const t = translations[language];
+
   return (
     <section className="projects" id="projects">
-      <h2 className="projects-title">Projects</h2>
+      <h2 className="projects-title">{t.title}</h2>
 
-      <p className="projects-text">
-        A selection of projects that I coded to show my interest in modern web
-        development with clean code and intuitive user experiences.
-      </p>
+      <p className="projects-text">{t.description}</p>
 
       <div className="projects-grid">
-        {/* =====================================================
-            COLOR PALETTE GENERATOR
-        ===================================================== */}
-
+        {/* Color Palette Generator */}
         <ProjectCard
-          title="Color Palette Generator"
-          description="A web application that generates and explores color palettes for design and styling."
+          title={t.projects[0].title}
+          description={t.projects[0].description}
           image={colorPaletteGenerator}
           github="https://github.com/GJTMonteiro/color-palette-generator"
           demo="https://color-palette-generator-zeta-sepia.vercel.app"
@@ -42,13 +98,10 @@ const Projects = () => {
           ]}
         />
 
-        {/* =====================================================
-            DEVTRACK
-        ===================================================== */}
-
+        {/* DevTrack */}
         <ProjectCard
-          title="DevTrack"
-          description="A full-stack developer productivity platform for managing projects, tasks, productivity and development workflows."
+          title={t.projects[1].title}
+          description={t.projects[1].description}
           image={DevTrack}
           github="https://github.com/GJTMonteiro/DevTrack"
           demo="https://dev-track-ecru.vercel.app/register"
@@ -61,13 +114,10 @@ const Projects = () => {
           ]}
         />
 
-        {/* =====================================================
-            DEVDOCS
-===================================================== */}
-
+        {/* DevDocs */}
         <ProjectCard
-          title="DevDocs"
-          description="AI-first platform for managing, searching, and interacting with technical documentation, with intelligent AI assistance, user management, notifications, and RAG/MCP support."
+          title={t.projects[2].title}
+          description={t.projects[2].description}
           image={DevDocs}
           github="https://github.com/GJTMonteiro/DevDocs"
           demo="https://dev-docs-pi-fawn.vercel.app/dashboard"
@@ -80,13 +130,11 @@ const Projects = () => {
             <SiPostgresql color="#4169E1" />,
           ]}
         />
-        {/* =====================================================
-            GTCOIN
-        ===================================================== */}
 
+        {/* GTCoin */}
         <ProjectCard
-          title="GTCoin"
-          description="A modern cryptocurrency and Web3 landing page featuring tokenomics, roadmap, NFTs, team members and an FAQ section."
+          title={t.projects[3].title}
+          description={t.projects[3].description}
           image={gtcoin}
           github="https://github.com/GJTMonteiro/crypto-website"
           demo="https://crypto-website-omega-beige.vercel.app"
