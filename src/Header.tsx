@@ -8,12 +8,12 @@ const Header = () => {
     pt: {
       about: 'Sobre',
       projects: 'Projetos',
-      contact: 'Contacto',
+      contact: 'Contactos',
     },
     en: {
       about: 'About',
       projects: 'Projects',
-      contact: 'Contact',
+      contact: 'Contacts',
     },
   };
 
