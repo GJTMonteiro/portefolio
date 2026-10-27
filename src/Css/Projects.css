@@ -1,72 +1,56 @@
-/* ==========================================================
-   PROJECTS
-========================================================== */
+/* =========================
+   PROJECTS — DIGITAL REBEL
+========================= */
 
 .projects {
+  position: relative;
   width: 100%;
-  max-width: 1200px;
-
+  max-width: var(--container-width);
   margin: 0 auto;
-
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
 
   scroll-margin-top: 90px;
 }
 
-/* ==========================================================
-   TITLE
-========================================================== */
+/* SECTION TITLE */
 
 .projects-title {
-  margin: 0 0 1rem;
-
-  text-align: center;
-
-  font-size: 2.8rem;
-  font-weight: 700;
-
-  line-height: 1.2;
-  letter-spacing: -1px;
+  margin: 0 0 1.25rem;
 
   color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+  text-align: center;
 }
 
-/* ==========================================================
-   DESCRIPTION
-========================================================== */
+/* SECTION DESCRIPTION */
 
 .projects-text {
-  max-width: 700px;
-
+  max-width: 650px;
   margin: 0 auto 4rem;
 
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.9;
   text-align: center;
-
-  color: var(--color-text-secondary);
-
-  font-size: 1.05rem;
-  line-height: 1.8;
 }
 
-/* ==========================================================
-   PROJECT GRID
-========================================================== */
+/* PROJECT GRID */
 
 .projects-grid {
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  gap: 2rem;
+  align-items: stretch;
+  gap: 1.5rem;
 
   width: 100%;
-
-  align-items: stretch;
 }
 
-/* ==========================================================
-   PROJECT CARDS
-========================================================== */
+/* KEEP CARDS CONSISTENT */
 
 .projects-grid > * {
   width: 100%;
@@ -78,63 +62,55 @@
   height: 100%;
 }
 
-/* ==========================================================
-   TABLET
-========================================================== */
+/* TABLET */
 
 @media (max-width: 900px) {
   .projects {
-    padding: 5rem 1.5rem;
+    padding: 5.5rem 1.5rem;
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
-@media (max-width: 768px) {
-  .projects {
-    padding: 4rem 1.25rem;
-  }
-
-  .projects-title {
-    font-size: 2.2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
   }
 
   .projects-text {
     margin-bottom: 3rem;
+  }
+}
 
-    font-size: 1rem;
-    line-height: 1.7;
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .projects-title {
+    font-size: clamp(2.3rem, 9vw, 3rem);
+  }
+
+  .projects-text {
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
 
-/* ==========================================================
-   SMALL MOBILE
-========================================================== */
+/* SMALL MOBILE */
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .projects {
     padding: 3.5rem 1rem;
   }
 
   .projects-title {
     font-size: 2rem;
-  }
-
-  .projects-text {
-    margin-bottom: 2.5rem;
-
-    font-size: 0.95rem;
   }
 
   .projects-grid {

@@ -1,94 +1,111 @@
-/* ==========================
-   CONTACT
-========================== */
+/* =========================
+   CONTACT — DIGITAL REBEL
+========================= */
 
 .contact {
-  padding: 6rem 2rem;
+  width: 100%;
+  padding: 7rem 2rem;
+  background: var(--color-bg);
   scroll-margin-top: 90px;
 }
 
-/* ==========================
-   CONTAINER
-========================== */
+/* CONTAINER */
 
 .contact-container {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* ==========================
-   TITLE
-========================== */
+/* TITLE */
 
 .contact-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1.25rem;
+
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
 }
 
-/* ==========================
-   DESCRIPTION
-========================== */
+/* DESCRIPTION */
 
 .contact-text {
-  color: #b3b3b3;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 2.5rem;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.9;
 }
 
-/* ==========================
-   CONTACT LINKS
-========================== */
+/* CONTACT LINKS */
 
 .contact-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* ==========================
-   LINKS
-========================== */
+/* LINK BUTTONS */
 
 .contact-links a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
 
+  min-height: 50px;
   padding: 0.9rem 1.4rem;
 
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
 
-  color: #fff;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
   text-decoration: none;
 
-  transition: all 0.3s ease;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .contact-links a:hover {
-  border-color: #8b5cf6;
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  background: var(--color-surface-hover);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
-/* ==========================
-   ICONS
-========================== */
+/* ICONS */
 
 .contact-links svg {
-  font-size: 1.3rem;
-  color: #fff;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  color: inherit;
+
+  transition: color var(--transition-fast);
 }
 
-/* ==========================
-   MOBILE
-========================== */
+/* KEYBOARD ACCESSIBILITY */
+
+.contact-links a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* TABLET AND MOBILE */
 
 @media (max-width: 768px) {
   .contact {
@@ -96,20 +113,56 @@
   }
 
   .contact-title {
-    font-size: 2.2rem;
+    font-size: clamp(2.2rem, 7vw, 3rem);
   }
 
   .contact-text {
     margin-bottom: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .contact-links {
+    gap: 0.85rem;
+  }
+
+  .contact-links a {
+    min-width: 220px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 4rem 1.25rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
   }
 
   .contact-links {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
 
   .contact-links a {
-    width: 220px;
-    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    padding: 0.9rem 1rem;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-links a,
+  .contact-links svg {
+    transition: none;
+  }
+
+  .contact-links a:hover {
+    transform: none;
   }
 }

@@ -1,4 +1,3 @@
-import logo from './assets/profile.jpeg';
 import { useLanguage } from './LanguageContext';
 
 const Header = () => {
@@ -13,7 +12,7 @@ const Header = () => {
     en: {
       about: 'About',
       projects: 'Projects',
-      contact: 'Contacts',
+      contact: 'Contact',
     },
   };
 
@@ -22,11 +21,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <a href="#home" className="logo">
-          <img src={logo} alt="Logo" />
+        <a href="#home" className="logo" aria-label="GJTMONTEIRO - Início">
+          GJTMONTEIRO
         </a>
 
-        <nav className="navbar">
+        <nav className="navbar" aria-label="Navegação principal">
           <a href="#about">{t.about}</a>
           <a href="#projects">{t.projects}</a>
           <a href="#contact">{t.contact}</a>
